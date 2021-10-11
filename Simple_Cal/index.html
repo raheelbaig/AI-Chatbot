@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Calculator</title>
+</head>
+
+<body>
+    <div class="container" >
+        <h1>Simple Calculator</h1>
+        <hr><br>
+        Value 1 : <input type="number" id="num1" placeholder="Enter yor first value"><br><br>
+
+        Value 2 : <input type="number" id="num2" placeholder="Enter yor second value"><br>
+        <div class="buttons">
+            <button onclick="Add()">ADD</button>
+            <button onclick="Sub()">SUB</button>
+            <button onclick="Mul()">MUL</button>
+            <button onclick="Div()">DIV</button>
+        </div>
+        <button id="answer" onclick="Result()">Show Answer</button>
+        <a href="javascript:window.top.location.reload(true)" class="continue">Refresh</a>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
