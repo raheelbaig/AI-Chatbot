@@ -1,28 +1,25 @@
-const inputValue = +document.getElementById('percentage').value;
-const Result = document.getElementById('result');
-const checkBtn = document.getElementById('checker');
 
 function check() {
+    var inputValue = +document.getElementById("percentage").value;
+    const Result = document.getElementById('result');
+
     if (inputValue >= 90 ) {
-        Result.innerText = "A1"
+        Result.innerText = "Your Grade is A1"
     }
     else if (inputValue >= 80) {
-        Result.innerText = "A+"
+        Result.innerText = "Your Grade is A+"
     }
     else if (inputValue >= 70) {
-        Result.innerText = "A"
+        Result.innerText = "Your Grade is A"
     }
     else if (inputValue >= 60) {
-        Result.innerText = "B"
+        Result.innerText = "Your Grade is B"
     }
     else if (inputValue >= 50) {
-        Result.innerText = "C"
+        Result.innerText = "Your Grade is C"
     }
     else if (inputValue < 50) {
-        Result.innerText = "FAIL"
+        Result.innerText = " You are FAIL"
     }
 }
 
-checkBtn.addEventListener('click', check);
-
-check();
